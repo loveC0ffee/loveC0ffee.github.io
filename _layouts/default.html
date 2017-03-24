@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {% include head.html %}
+<header>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+</header>
 
   <body>
 
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <nav>
+      <div class="container">
+        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" height="35"/></a>
+        <div class="button">
+          <a href="/#donate">Donate</a>
+        </div>
       </div>
-    </main>
-
-    {% include footer.html %}
-
+    </nav>
+    <div class="content">
+      {{ content }}
+    </div>
   </body>
 
 </html>
