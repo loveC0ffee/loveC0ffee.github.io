@@ -17,6 +17,22 @@ nav .button {
 	top: 4px;
 }
 
+nav .container{
+	display: flex;
+	justify-content: center;
+}
+
+nav .sharing {
+	position: absolute;
+	right: 35px;
+	align-self: center;
+	display: flex;
+}
+
+nav .item {
+	align-self: center;
+}
+
 .thirds {
 	@media #{$desktop} {
 		display: flex;
@@ -148,7 +164,7 @@ footer {
 		}
 		div {
 			@media #{$desktop} {
-				width: 33%;
+				width: 50%;
 				margin: 0;
 			}
 			margin: 20px 0;
