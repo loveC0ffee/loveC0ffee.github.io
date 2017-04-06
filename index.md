@@ -7,10 +7,10 @@ header_background_image: /images/shop_main.jpg
 ---
 
 <header style="background-image: url({{ page.header_background_image | relative_url }});">
-	<div class="learn-more"><a href="#learn-more">more <span class="arrow">&#x25BC;</span></a></div>
+	<div class="continue-below"><a href="#continue-below">more <span class="arrow">&#x25BC;</span></a></div>
 </header>
 
-<section id="learn-more">
+<section id="continue-below">
 	<div class="container">
 
 		<div class="">
