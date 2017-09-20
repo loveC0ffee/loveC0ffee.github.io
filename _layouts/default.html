@@ -6,74 +6,33 @@
     <script src="https://use.fontawesome.com/f3c8b79449.js"></script>
 </head>
 
-  <body>
-
+<body>
     <nav>
-      <div class="container">
-
-        <div class="item">
-          the shop
-        </div>
-
-        <div class="item">
-          <a href="{{ site.baseurl }}/">
+        <div class="container">
+            <div class="item">
+                the shop
+            </div>
+            <div class="item">
+                <a href="{{ site.baseurl }}/">
             <img class="logo" src="{{ "/images/logo.png" | relative_url }}"></a>
-        </div>
-
-        <div class="item">
-          the kombi
-        </div>
-
-
-        <div class="sharing">
-          <a class="sharing-item" href="https://www.facebook.com/{{ site.data.company.facebook }}">
+            </div>
+            <div class="item">
+                the kombi
+            </div>
+            <div class="sharing">
+                <a class="sharing-item" href="https://www.facebook.com/{{ site.data.company.facebook }}">
             <i class="fa fa-facebook-official" aria-hidden="true"></i>
           </a>
-          <a class="sharing-item" href="https://instagram.com/{{ site.data.company.instagram }}">
+                <a class="sharing-item" href="https://instagram.com/{{ site.data.company.instagram }}">
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
+            </div>
         </div>
-
-      </div>
     </nav>
-    
     <div class="content">
-      {{ content }}
+        {{ content }}
     </div>
-  </body>
+</body>
 
-  <footer>
-    <p class="editor-link" style="margin-bottom: 20px;"></p>
-
-    <div class="container">
-      <div class="about">
-        <p>{{ site.data.company.mission_statement }}</p>
-      </div>
-
-        <div class="contact">
-          <address>
-            <a href="https://www.google.com/maps/place/{{ site.data.company.address | url_encode }}">
-              <i class="fa fa-map-marker" aria-hidden="true"></i> {{ site.data.company.address }}
-            </a>
-          </address>
-          <p class="email">
-            <a href="mailto:{{ site.data.company.email }}">
-              <i class="fa fa-envelope" aria-hidden="true"></i> {{ site.data.company.email }}
-            </a>
-          </p>
-          <p class="phone">
-            <a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
-              <i class="fa fa-phone" aria-hidden="true"></i> {{ site.data.company.phone }}
-            </a>
-          </p>
-        </div>
-
-    </div>
-  </footer>
-    <p class="copyright">
-      <a href="http://alasda.ir/">
-        Website and brotherly love provided by alasda.ir
-      </a>
-    </p>
-
+{% include footer.html %}
 </html>

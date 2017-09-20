@@ -1,0 +1,30 @@
+<footer>
+    <p class="editor-link" style="margin-bottom: 20px;"></p>
+    <div class="container">
+        <div class="about">
+            <p>{{ site.data.company.mission_statement }}</p>
+        </div>
+        <div class="contact">
+            <address>
+                <a href="https://www.google.com/maps/place/{{ site.data.company.address | url_encode }}">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> {{ site.data.company.address }}
+            </a>
+            </address>
+            <p class="email">
+                <a href="mailto:{{ site.data.company.email }}">
+              <i class="fa fa-envelope" aria-hidden="true"></i> {{ site.data.company.email }}
+            </a>
+            </p>
+            <p class="phone">
+                <a href="tel:{{ site.data.company.phone | replace: ' ', '-' }}">
+              <i class="fa fa-phone" aria-hidden="true"></i> {{ site.data.company.phone }}
+            </a>
+            </p>
+        </div>
+    </div>
+    <p class="copyright">
+    <a href="http://alasda.ir/">
+Website and brotherly love provided by alasda.ir
+      </a>
+</p>
+</footer>
