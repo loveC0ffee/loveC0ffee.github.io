@@ -12,7 +12,6 @@ header_background_image: /images/shop_main.jpg
 
 <section id="more">
 	<div class="container">
-
 		<div class="">
 			<p>Love Coffee is a modern coffee shop in the heart of the Morningside neighborhood of Durban, KZN. It’s comfortable, it’s alive, it’s filled with interesting people and delicious, hand crafted beverages.</p>
 			<p>Love Coffee partners with Colombo Roasters to serve fresh, organic, direct trade coffee along with delicous loose leaf tea from around the world.</p>
